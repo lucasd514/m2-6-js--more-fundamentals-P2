@@ -49,12 +49,15 @@ const staffMembers = [
   },
 ];
 
-const skillLevels = staffMembers.map(function (ele) {
-  return ele.skillLevels;
-});
+//arr                     //prameter
+const job = staffMembers.map(function (lazioMerda) {
+  return lazioMerda.title;
+}); //key
 
-const getData = function (arr, key) {
+const generator = function (arr, key) {
   return arr.map(function (ele) {
     return ele[key];
   });
 };
+
+console.log(generator(staffMembers, "skillLevels"));
